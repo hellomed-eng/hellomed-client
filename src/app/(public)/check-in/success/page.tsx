@@ -11,45 +11,53 @@ import {
   CardTitle,
 } from "@/ui/external/card";
 import { CheckCircle } from "lucide-react";
-import { CheckInFormInputs } from "@/lib/types/check-in";
+import {
+  CheckInFormInputs,
+  ReturningCheckInFormInputs,
+} from "@/lib/types/check-in";
 import styles from "./page.module.css";
+
+type FormVariant = "new" | "returning";
 
 export default function CheckInFormSuccessPage() {
   const timer = 20;
-  const [formData, setFormData] = useState<CheckInFormInputs>();
+  const [newFormData, setNewFormData] = useState<CheckInFormInputs>();
+  const [returningFormData, setReturningFormData] =
+    useState<ReturningCheckInFormInputs>();
+  const [variant, setVariant] = useState<FormVariant>("new");
   const [countdown, setCountdown] = useState(timer);
   const router = useRouter();
 
   useEffect(() => {
-    // Retrieve form data from sessionStorage
+    const storedVariant = sessionStorage.getItem("checkInFormVariant");
     const storedData = sessionStorage.getItem("formData");
-    if (storedData) {
-      setFormData(JSON.parse(storedData));
+    if (storedVariant === "returning" && storedData) {
+      setVariant("returning");
+      setReturningFormData(JSON.parse(storedData));
+    } else if (storedData) {
+      setVariant("new");
+      setNewFormData(JSON.parse(storedData));
     }
 
-    // Start countdown timer
     const timerInterval = setInterval(() => {
       setCountdown((prev) => {
         if (prev <= 1) {
-          clearInterval(timer);
+          clearInterval(timerInterval);
           return 0;
         }
         return prev - 1;
       });
     }, 1000);
 
-    // Cleanup timer on component unmount
     return () => clearInterval(timerInterval);
   }, []);
 
-  // Separate useEffect for handling redirect when countdown reaches 0
   useEffect(() => {
     if (countdown === 0) {
-      router.push("/check-in");
+      router.push(variant === "returning" ? "/check-in/returning" : "/check-in");
     }
-  }, [countdown, router]);
+  }, [countdown, router, variant]);
 
-  // Calculate progress percentage for the CSS
   const progressPercentage = ((timer - countdown) / timer) * 100;
 
   const renderField = (label: string, value: string | boolean | undefined) => (
@@ -64,6 +72,89 @@ export default function CheckInFormSuccessPage() {
       )}
     </div>
   );
+
+  const renderReturningSummary = () => {
+    const d = returningFormData;
+    if (!d) return null;
+    return (
+      <>
+        <div className="space-y-4">
+          <h2 className="text-xl font-semibold">Patient Information</h2>
+          {renderField("Name", d.name)}
+          {renderField("Birth Date", d.birthDate)}
+          {renderField("Phone", d.phone || "No change")}
+          {renderField("Email", d.email || "No change")}
+          {renderField("Billing Address", d.address || "No change")}
+          {renderField(
+            "Preferred Pharmacy",
+            d.preferredPharmacy || "No change",
+          )}
+          {renderField(
+            "Insurance Card Front Image",
+            d.insuranceImageFront,
+          )}
+          {renderField("Insurance Card Back Image", d.insuranceImageBack)}
+        </div>
+        <div className="space-y-4">
+          <h2 className="text-xl font-semibold">Medical Updates</h2>
+          {renderField(
+            "Medical history changed since last visit",
+            d.medicalHistoryChanged,
+          )}
+          {d.medicalHistoryChanged === "yes" &&
+            renderField(
+              "Medical history details",
+              d.medicalHistoryDescription,
+            )}
+          {renderField("Medications changed", d.medicationsChanged)}
+          {d.medicationsChanged === "yes" &&
+            renderField("Medications list", d.medicationsList)}
+          {renderField(
+            "Medication allergies",
+            d.medicationAllergyType === "none"
+              ? "No known allergies"
+              : d.medicationAllergy,
+          )}
+          {renderField("Reason for Visit", d.reasonForVisit)}
+        </div>
+      </>
+    );
+  };
+
+  const renderNewSummary = () => {
+    const d = newFormData;
+    if (!d) return null;
+    return (
+      <>
+        <div className="space-y-4">
+          <h2 className="text-xl font-semibold">Personal Information</h2>
+          {renderField("Name", d.name)}
+          {renderField("Birth Date", d.birthDate)}
+          {renderField("Phone", d.phone)}
+          {renderField("Email", d.email)}
+          {renderField("Address", d.address)}
+          {renderField("Zipcode", d.zipcode)}
+          {renderField("How did you hear about us?", d.hearAboutUs)}
+          {renderField("ID Image", d.idImage)}
+          {renderField(
+            "Insurance Card Front Image",
+            d.insuranceImageFront,
+          )}
+          {renderField("Insurance Card Back Image", d.insuranceImageBack)}
+        </div>
+        <div className="space-y-4">
+          <h2 className="text-xl font-semibold">Medical Information</h2>
+          {renderField("Medication Allergy", d.medicationAllergy)}
+          {renderField("Preferred Pharmacy", d.preferredPharmacy)}
+          {renderField("At Home Medication", d.homeMedication)}
+          {renderField("Reason for Visit", d.reasonForVisit)}
+          {renderField("Recent Exposures", d.exposures)}
+          {renderField("Recent Tests", d.recentTests)}
+          {renderField("Recent Visits", d.recentVisits)}
+        </div>
+      </>
+    );
+  };
 
   return (
     <div className="container mx-auto px-4">
@@ -91,42 +182,13 @@ export default function CheckInFormSuccessPage() {
         <CardContent>
           <div className="space-y-6">
             <p className="text-center text-lg">
-              Thank you for submitting your check-in information. Here's a
+              Thank you for submitting your check-in information. Here&apos;s a
               summary of your submission:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="space-y-4">
-                <h2 className="text-xl font-semibold">Personal Information</h2>
-                {renderField("Name", formData?.name)}
-                {renderField("Birth Date", formData?.birthDate)}
-                {renderField("Phone", formData?.phone)}
-                {renderField("Email", formData?.email)}
-                {renderField("Address", formData?.address)}
-                {renderField("Zipcode", formData?.zipcode)}
-                {renderField(
-                  "How did you hear about us?",
-                  formData?.hearAboutUs
-                )}
-                {renderField("ID Image", formData?.idImage)}
-                {renderField(
-                  "Insurance Card Front Image",
-                  formData?.insuranceImageFront
-                )}
-                {renderField(
-                  "Insurance Card Back Image",
-                  formData?.insuranceImageBack
-                )}
-              </div>
-              <div className="space-y-4">
-                <h2 className="text-xl font-semibold">Medical Information</h2>
-                {renderField("Medication Allergy", formData?.medicationAllergy)}
-                {renderField("Preferred Pharmacy", formData?.preferredPharmacy)}
-                {renderField("At Home Medication", formData?.homeMedication)}
-                {renderField("Reason for Visit", formData?.reasonForVisit)}
-                {renderField("Recent Exposures", formData?.exposures)}
-                {renderField("Recent Tests", formData?.recentTests)}
-                {renderField("Recent Visits", formData?.recentVisits)}
-              </div>
+              {variant === "returning"
+                ? renderReturningSummary()
+                : renderNewSummary()}
             </div>
           </div>
         </CardContent>
