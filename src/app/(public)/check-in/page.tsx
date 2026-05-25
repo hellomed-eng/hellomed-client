@@ -8,6 +8,7 @@ import { Input } from "@/ui/external/input";
 import { Label } from "@/ui/external/label";
 import { RadioGroup, RadioGroupItem } from "@/ui/external/radio-group";
 import { Textarea } from "@/ui/external/textarea";
+import Link from "next/link";
 import {
   Select,
   SelectContent,
@@ -68,11 +69,11 @@ export default function CheckInFormPage() {
     ];
     const isValid =
       (requiredFields.every(
-        (field) => formInputs[field as keyof CheckInFormInputs] !== ""
+        (field) => formInputs[field as keyof CheckInFormInputs] !== "",
       ) &&
         formInputs["preferredPharmacy"] !== "others") ||
       (requiredFields.every(
-        (field) => formInputs[field as keyof CheckInFormInputs] !== ""
+        (field) => formInputs[field as keyof CheckInFormInputs] !== "",
       ) &&
         formInputs["preferredPharmacy"] === "others" &&
         tempPreferredPharmacy !== "");
@@ -157,7 +158,7 @@ export default function CheckInFormPage() {
       try {
         await uploadImageToS3(
           insuranceImageFrontFile,
-          `insurance-front/checkin-${id}`
+          `insurance-front/checkin-${id}`,
         );
       } catch (error) {
         await patchCheckIn(id, "insuranceImageFront");
@@ -173,7 +174,7 @@ export default function CheckInFormPage() {
       try {
         await uploadImageToS3(
           insuranceImageBackFile,
-          `insurance-back/checkin-${id}`
+          `insurance-back/checkin-${id}`,
         );
       } catch (error) {
         await patchCheckIn(id, "insuranceImageBack");
@@ -198,7 +199,7 @@ export default function CheckInFormPage() {
     nameOrEvent:
       | string
       | ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>,
-    value?: string
+    value?: string,
   ) => {
     if (typeof nameOrEvent === "string") {
       // Handle Select and RadioGroup changes
@@ -212,10 +213,16 @@ export default function CheckInFormPage() {
 
   return (
     <Card className="w-full max-w-2xl mx-auto border-0 sm:border-4">
-      <CardHeader>
-        <CardTitle className="text-2xl font-bold">
+      <CardHeader className="flex flex-row justify-between items-center">
+        <CardTitle className="text-2xl font-bold flex flex-row items-center space-x-2">
           Patient Check-In Form
         </CardTitle>
+        <Link
+          href="/"
+          className="text-blue-600 border-blue-600 hover:underline px-4 py-2 rounded-md"
+        >
+          Returning Patient?
+        </Link>
       </CardHeader>
       <CardContent>
         <form className="space-y-6" onSubmit={handleSubmit}>
