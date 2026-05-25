@@ -249,9 +249,7 @@ export default function ReturningCheckInFormPage() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Medical Updates</h3>
             <div className="space-y-2">
-              <Label>
-                Any changes to medical history since last visit? *
-              </Label>
+              <Label>Any changes to medical history since last visit? *</Label>
               <RadioGroup
                 name="medicalHistoryChanged"
                 value={formInputs.medicalHistoryChanged}
@@ -328,12 +326,12 @@ export default function ReturningCheckInFormPage() {
                 }
               >
                 <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="none" id="allergy-none" />
-                  <Label htmlFor="allergy-none">No Known Allergies</Label>
-                </div>
-                <div className="flex items-center space-x-2">
                   <RadioGroupItem value="yes" id="allergy-yes" />
                   <Label htmlFor="allergy-yes">Yes (Describe)</Label>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <RadioGroupItem value="none" id="allergy-none" />
+                  <Label htmlFor="allergy-none">No Known Allergies</Label>
                 </div>
               </RadioGroup>
             </div>

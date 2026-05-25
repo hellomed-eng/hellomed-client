@@ -49,12 +49,12 @@ export default async function AdminLayout({
       </header>
       <div className="flex min-h-[calc(100svh-76px)]">
         {/* sidebar */}
-        <div className="bg-slate-700 w-[15%] p-6">
-          <ul className="space-y-4">
+        <div className="bg-slate-700 w-[15%] min-w-[11rem] shrink-0 p-4 sm:p-6">
+          <ul className="space-y-3 sm:space-y-4">
             {menus.map((menu) => (
               <li key={menu.key}>
-                <Link href={`/admin/${menu.key}`}>
-                  <span className="text-white underline hover:font-semibold">
+                <Link href={`/admin/${menu.key}`} className="block">
+                  <span className="text-white underline hover:font-semibold whitespace-nowrap text-[clamp(0.875rem,1.35vw,1.125rem)] leading-snug">
                     {menu.name}
                   </span>
                 </Link>
@@ -63,7 +63,7 @@ export default async function AdminLayout({
           </ul>
         </div>
         {/* main content */}
-        <div className="w-[85%] p-10">{children}</div>
+        <div className="flex-1 min-w-0 p-6 sm:p-10">{children}</div>
       </div>
     </main>
   );

@@ -139,10 +139,24 @@ export function toReturningCheckInPostBody(
 }
 
 // GET API response for entire check in form
-export interface CheckInFormOutputs extends CheckInFormInputs {
-  formType: CheckInFormType;
+export interface CheckInFormOutputs extends CheckInImageFields {
+  formType?: CheckInFormType;
   id: number;
+  name: string;
+  birthDate: string;
+  reasonForVisit: string;
   created_at: string;
+  phone?: string | null;
+  email?: string | null;
+  address?: string | null;
+  zipcode?: string | null;
+  hearAboutUs?: string | null;
+  preferredPharmacy?: string | null;
+  homeMedication?: string | null;
+  exposures?: string | null;
+  recentTests?: string | null;
+  recentVisits?: string | null;
+  medicationAllergy?: string | null;
   medicalHistoryChanged?: string | null;
   medicalHistoryDescription?: string | null;
   medicationsChanged?: string | null;
@@ -153,9 +167,10 @@ export interface CheckInFormOutputs extends CheckInFormInputs {
 // GET API response for check in form board list
 export interface CheckInFormBoardDisplay extends CheckInBase {
   id: number;
-  formType: CheckInFormType;
+  formType?: CheckInFormType;
   viewed: boolean;
   created_at: string;
+  hearAboutUs?: string | null;
 }
 
 // Wrapper type for check in form board list
