@@ -21,7 +21,11 @@ import {
 } from "@/ui/external/pagination";
 import { CheckInFromBoardOutputs } from "@/lib/types/check-in";
 import { formatDate } from "@/lib/features/utils";
-import { resolveCheckInFormType } from "@/lib/features/check-in-admin";
+import {
+  resolveCheckInFormType,
+  formatSubmittedAt,
+  formatSubmittedAtExact,
+} from "@/lib/features/check-in-admin";
 import { CheckInTypeBadge } from "@/components/check-in/CheckInTypeBadge";
 import useCheckInListUpdaterSocket from "@/lib/hooks/socket";
 
@@ -31,13 +35,18 @@ export default function CheckInView() {
   const [checkIns, setCheckIns] = useState<CheckInFromBoardOutputs>();
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [nowMs, setNowMs] = useState(() => Date.now());
 
   const pageSize = 15;
-
-  const currentPage = parseInt(searchParams.get("page") || "0");
+  const currentPage = parseInt(searchParams.get("page") || "0", 10);
   const totalPages = checkIns
     ? Math.floor(checkIns.totalCheckIns / pageSize)
     : 0;
+
+  useEffect(() => {
+    const interval = setInterval(() => setNowMs(Date.now()), 60_000);
+    return () => clearInterval(interval);
+  }, []);
 
   const fetchCheckIns = useCallback(async () => {
     setIsLoading(true);
@@ -90,12 +99,22 @@ export default function CheckInView() {
             <TableBody>
               {checkIns?.checkIns.map((checkIn) => {
                 const formType = resolveCheckInFormType(checkIn);
+                const submittedLabel = formatSubmittedAt(
+                  checkIn.created_at,
+                  nowMs,
+                );
+                const submittedExact = formatSubmittedAtExact(
+                  checkIn.created_at,
+                );
+                const showSubmittedTooltip =
+                  submittedLabel !== submittedExact;
+
                 return (
                   <TableRow
                     key={checkIn.id}
                     className={`group cursor-pointer ${!checkIn.viewed ? "font-bold" : ""}`}
                     onClick={() =>
-                      (location.href = `/admin/check-in-view/${checkIn.id}`)
+                      router.push(`/admin/check-in-view/${checkIn.id}`)
                     }
                   >
                     <TableCell className="group-hover:bg-gray-100">
@@ -110,12 +129,20 @@ export default function CheckInView() {
                       </span>
                     </TableCell>
                     <TableCell className="group-hover:bg-gray-100 truncate max-w-0">
-                      <span className="block truncate">
-                        {formatDate(checkIn.created_at, "MM/dd/yyyy HH:mm")}
+                      <span
+                        className="block truncate"
+                        title={
+                          showSubmittedTooltip ? submittedExact : undefined
+                        }
+                      >
+                        {submittedLabel}
                       </span>
                     </TableCell>
                     <TableCell className="group-hover:bg-gray-100 truncate max-w-0">
-                      <span className="block truncate">
+                      <span
+                        className="block truncate"
+                        title={checkIn.reasonForVisit}
+                      >
                         {checkIn.reasonForVisit}
                       </span>
                     </TableCell>

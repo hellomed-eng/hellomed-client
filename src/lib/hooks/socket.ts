@@ -19,20 +19,11 @@ export default function useCheckInListUpdaterSocket(
       if (currentPage !== 0) {
         return;
       }
-      console.log("before format", newCheckIn.created_at);
-
-      // Format the date correctly
-      newCheckIn.created_at = formatDate(
-        newCheckIn.created_at,
-        "MM/dd/yyyy HH:mm"
-      );
       newCheckIn.birthDate = formatDate(
         newCheckIn.birthDate,
         "MM/dd/yyyy",
-        "UTC"
+        "UTC",
       );
-
-      console.log("after format", newCheckIn.created_at);
 
       setCheckIns((prevState) => {
         if (!prevState) return prevState; // Early return if no state exists yet
