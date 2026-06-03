@@ -1,7 +1,7 @@
 import client from "./client-config";
-import { CheckInFormInputs, GetCheckInsParams } from "@/lib/types/check-in";
+import { CheckInPostBody, GetCheckInsParams } from "@/lib/types/check-in";
 
-export async function postCheckIn(body: CheckInFormInputs) {
+export async function postCheckIn(body: CheckInPostBody) {
   const url = `/check-in/`;
   try {
     const response = await client.post(url, body);

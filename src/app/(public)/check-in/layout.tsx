@@ -12,9 +12,6 @@ export default function AppointmentLayout({
     <div>
       {/* Main Content */}
       <div className="flex flex-col justify-center py-10">{children}</div>
-
-      {/* Footer */}
-      <Footer />
     </div>
   );
 }
