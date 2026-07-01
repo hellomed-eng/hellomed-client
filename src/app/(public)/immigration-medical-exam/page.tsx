@@ -245,7 +245,7 @@ export default function ImmigrationMedicalExamPage() {
             <h3 className="font-semibold mb-2 mt-6">3. Vaccination</h3>
             <p className="mb-4">
               <strong>
-                New formula (2025/2026) FLU vaccine is required
+                New formula (2026/2027) FLU vaccine is required
                 regardless of your past doses
               </strong>
             </p>
