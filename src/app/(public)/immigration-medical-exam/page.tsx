@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   keywords: [
     "immigration medical exam blood test",
-    "immigration check up",
+    "immigration medical test",
     "immigration green card medical exam",
     "immigration I693 exam",
     "immigration medical examination",
