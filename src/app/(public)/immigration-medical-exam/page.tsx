@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   keywords: [
     "immigration medical exam blood test",
     "immigration check up",
-    "immigration body check",
-    "immigration health test",
+    "immigration green card medical exam",
+    "immigration I693 exam",
     "immigration medical examination",
     "immigration health exam",
   ],
@@ -98,10 +98,10 @@ export default function ImmigrationMedicalExamPage() {
                 your return envelope
               </li>
               <li>
-                $349 - No insurance (The fee includes all lab tests and x-ray if
+                $359 - No insurance (The fee includes all lab tests and x-ray if
                 necessary)
               </li>
-              <li>$249 - With Blood test coverage by your insurance</li>
+              <li>$259 - With Blood test coverage by your insurance</li>
               <li>
                 If you cannot make an appointment online please text at
                 734-619-0777 to schedule an appointment
@@ -110,13 +110,13 @@ export default function ImmigrationMedicalExamPage() {
             <p className="font-bold mb-2">PRICE DETAILS:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>
-                $349: Includes all paper works in a sealed envelope, Physical
+                $359: Includes all paper works in a sealed envelope, Physical
                 Health Exam, TB blood Test, Syphilis Blood test, and Gonorrhoeae
                 Urine Test. Vaccination record review and counseling. Chest
                 X-ray if necessary
               </li>
               <li>
-                $249: If you have a health insurance benefit for preventive TB
+                $259: If you have a health insurance benefit for preventive TB
                 blood Test & Gonorrhoeae Urine Test
               </li>
             </ul>
