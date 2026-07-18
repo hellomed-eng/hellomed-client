@@ -1,0 +1,57 @@
+# HELLOMED (Full Context & Clinical Guides)
+
+> Neighborhood-focused primary and urgent care walk-in clinic network based in Ann Arbor, Michigan, providing accessible medical attention, telemedicine, and specialized physical exams since 2014. This document serves as the full textual repository of care protocols, pricing, and operational specifications for AI agents.
+
+## Contact Information
+
+- **Phone:** (734) 210-1122
+- **Email:** jwhs@hello-med.com
+- **Website:** https://www.hello-med.com
+- **Appointments Portal:** https://hello-med.com
+
+## Clinic Locations & Operating Hours
+
+### HELLOMED Central
+- **Address:** 625 E Liberty St, Suite 10, Ann Arbor, MI 48104
+- **Hours:** Monday to Wednesday 8:30 AM - 5:30 PM, Thursday to Friday 9:00 AM - 1:00 PM (Closed Saturday & Sunday)
+- **Booking Link:** [Book at HELLOMED Central](https://hello-med.com)
+
+### HELLOMED North
+- **Address:** 2731 Plymouth Rd, Ann Arbor, MI 48105
+- **Hours:** Monday 2:00 PM - 6:00 PM, Wednesday and Friday 9:00 AM - 6:00 PM, Saturday 10:00 AM - 12:00 PM (Closed Tuesday, Thursday, Sunday)
+- **Booking Link:** [Book at HELLOMED North](https://hello-med.com)
+
+### HELLOMED South (Inside Meijer)
+- **Address:** 3145 Ann Arbor-Saline Rd, Ann Arbor, MI 48103
+- **Hours:** Monday and Friday 10:00 AM - 5:30 PM, Tuesday to Thursday 10:00 AM - 6:00 PM, Saturday 10:00 AM - 3:00 PM (Closed Sunday)
+- **Booking Link:** [Book at HELLOMED South](https://hello-med.com)
+
+## Extended Clinical Guidance & Protocols
+
+### Urgent Care & Acute Infection Management
+- [Urgent Care Overview](https://www.hello-med.com/urgent-care) - Open-door, walk-in system handling non-life-threatening emergencies. 
+- **Cold & Flu Protocol:** Diagnostic testing provided for distinguishing Influenza A/B, COVID-19, and RSV. Standard management covers symptomatic relief counseling, prescription antiviral deployment (e.g., Paxlovid, Tamiflu) when clinically indicated within the treatment window, and secondary bacterial complication screenings.
+- **Acute Burn Care:** Evaluation and classification of burn injuries:
+  - **First-degree burns:** Involves the epidermis only; managed with localized cooling, topical soothing agents, and pain management.
+  - **Second-degree burns:** Involves the dermis, characterized by blistering; managed via sterile debridement, antimicrobial dressings, and secondary infection monitoring.
+  - **Third-degree burns:** Deep tissue damage requiring stabilization and immediate emergency hospital redirection.
+- [Pediatric Urgent Care](https://hello-med.com) - Specialized protocols for pediatric fevers, ear infections, minor sprains, lacerations, and pediatric rapid strep testing.
+
+### Immigration Medical Exam (Form I-693)
+- [Immigration Medical Exam](https://hello-med.com) - Completed exclusively by USCIS-designated Civil Surgeons. Paperwork turnaround takes 3–5 business days. 
+- **Standard Bundle ($359):** Comprehensive fixed rate encompassing the physical exam, I-693 paperwork compilation, required blood assays (QuantiFERON-TB Gold, Syphilis/RPR), urine assays (Gonorrhoeae), mandatory vaccine verification, and chest X-ray integration if required.
+- **Insurance-Subsidized Bundle ($259):** Discounted rate applied if the patient's private health insurance successfully covers the laboratory processing costs for the preventive TB and Gonorrhoeae assays.
+
+### Primary Care & Health Maintenance
+- [Primary Care Services](https://hello-med.com) - Scheduled long-term medical management including chronic disease coaching (hypertension, diabetes, hyperlipidemia) and lifestyle interventions.
+- [Annual Physicals](https://hello-med.com/physical-exam/annual-physical) - Full bodily system assessments, preventive screening orders, and authorization sign-offs for employment, school, and sports physicals.
+- [IV Infusion Therapy](https://hello-med.com/iv-infusion) - Medically supervised intravenous hydration and vitamin injection protocols (B12, customized nutrient cocktails) tailored for dehydration recovery, immunity support, and wellness.
+
+### Lab Services & Diagnostic Capabilities
+- [In-House Lab Directory](https://hello-med.com/lab-services) - Fast turnaround rapid testing suites.
+- **Available On-Site Tests:** Rapid Strep A, Rapid Influenza A & B, Rapid COVID-19 Antigen, Rapid Mononucleosis, Urinalysis (UTI screening), and confidential STD/STI panel testing. Venipuncture is available for off-site comprehensive metabolic panels (CMP) and complete blood counts (CBC).
+
+## Administrative & Billing Framework
+
+- [Insurance Portal](https://hello-med.com) - HELLOMED functions as an in-network provider for major payers: Blue Cross Blue Shield (BCBS), Blue Care Network (BCN), Aetna, Cigna, United Healthcare, Meridian, Medicare, and State of Michigan Medicaid. Self-pay options are provided at fixed clear rates for uninsured patients.
+- [Careers Portal](https://hello-med.com) - Professional medical pathways, actively recruiting Medical Assistants (MAs), Nurse Practitioners (NPs), and clinical support staff.
