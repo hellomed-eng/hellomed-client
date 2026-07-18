@@ -1,5 +1,5 @@
 User-agent: *
-Allow: /
+Allow: / AI search bots to access your website
 
 Disallow: /admin/
 
