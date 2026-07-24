@@ -3,6 +3,10 @@ const homeStructuredData = {
   "@type": "MedicalClinic",
   name: "HELLOMED Urgent Care",
   url: "https://www.hello-med.com",
+  sameAs: [
+    "https://www.instagram.com/hellomedclinic/",
+    "https://www.facebook.com/hellomedclinic/",
+  ],
   telephone: "+1-734-210-1122",
   email: "mailto:JWHS@hello-med.com",
   image: "https://www.hello-med.com/landing-img.webp",
