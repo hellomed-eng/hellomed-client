@@ -10,17 +10,28 @@ import homeStructuredData from "@/lib/content/structured-data/home";
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HELLOMED Urgent Care</title>
+    <meta charset="UTF-8">
+    <title>HELLOMED Urgent Care inside Meijer</title>
     
-    <script type="application/ld+json"> ... </script>
+       <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "HELLOMED Urgent Care in Meijer",
+      "containedInPlace": {
+        "@type": "GroceryStore",
+        "name": "Meijer",
+        "streetAddress": "3145 Ann Arbor-Saline Rd"
+      }
+    }
+    </script>
 
 </head>
 <body>
-
-    <h1>HELLOMED Urgent Care in Meijer</h1> 
-
+    <h1>HELLOMED Urgent Care</h1>
 </body>
 </html>
+
 
 export const metadata: Metadata = {
   title: "Top Rated Urgent Care near me Ann Arbor Michigan | Walk in Clinic | HELLOMED",
