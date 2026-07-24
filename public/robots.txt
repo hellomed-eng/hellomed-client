@@ -1,6 +1,0 @@
-User-agent: *
-Allow: / AI search bots to access your website
-
-Disallow: /admin/
-
-Sitemap: https://www.hello-med.com/sitemap.xml
