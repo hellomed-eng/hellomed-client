@@ -7,18 +7,33 @@ import LocationsSection from "@/ui/locations-section";
 import Carousel from "@/ui/landing-page/carousel";
 import homeStructuredData from "@/lib/content/structured-data/home";
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HELLOMED Urgent Care</title>
+    
+    <script type="application/ld+json"> ... </script>
+
+</head>
+<body>
+
+    <h1>HELLOMED Urgent Care in Meijer</h1> 
+
+</body>
+</html>
+
 export const metadata: Metadata = {
-  title: "Top Rated Urgent Care Ann Arbor Michigan | Walk in Clinic | HELLOMED",
+  title: "Top Rated Urgent Care near me Ann Arbor Michigan | Walk in Clinic | HELLOMED",
   description:
-    "Looking for the best urgent care in Ann Arbor? HelloMed offers fast, affordable healthcare solutions at our walk-in clinics on Plymouth Rd & Ann Arbor-Saline Rd. Open after hours.",
+    "Looking for the best urgent care in Ann Arbor? HelloMed offers fast, affordable healthcare solutions at our walk-in clinics on Meijer Ann Arbor-Saline Rd & Plymouth Rd & Liberty St. Open after hours.",
   metadataBase: new URL("https://www.hello-med.com"),
   alternates: {
     canonical: "https://www.hello-med.com",
   },
   openGraph: {
-    title: "Best Urgent Care Ann Arbor-Saline Rd | HELLOMED",
+    title: " Best Urgent Care Inside Meijer Ann Arbor-Saline Rd | HELLOMED",
     description:
-      "Looking for the best urgent care in Ann Arbor? HelloMed offers fast, affordable healthcare solutions at our walk-in clinics on Plymouth Rd & Ann Arbor-Saline Rd. Open after hours.",
+      "Looking for the best urgent care in Ann Arbor? HelloMed offers fast, affordable healthcare solutions at our walk-in clinics on Plymouth Rd & Meijer Ann Arbor-Saline Rd. Open after hours.",
     url: "https://www.hello-med.com",
     siteName: "HELLOMED Urgent Care",
     images: [
@@ -34,7 +49,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Urgent Care Ann Arbor-Saline Rd | HELLOMED",
+    title: "Best Urgent Care Inside Meijer Ann Arbor-Saline Rd | HELLOMED",
     description:
       "Looking for the best urgent care in Ann Arbor? HelloMed offers fast, affordable healthcare solutions.",
     images: ["https://www.hello-med.com/landing-img.webp"],
