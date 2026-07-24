@@ -53,18 +53,49 @@ export const metadata: Metadata = {
 };
 
 export default function LandingPage() {
+  
+  const homeStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "HELLOMED Urgent Care in Meijer",
+    "description": "Walk-in urgent care center and medical clinic located inside the Meijer on Ann Arbor-Saline Road.",
+    "url": "https://hello-med.com",
+    "telephone": "+1-734-255-3185", 
+    "medicalSpecialty": "EmergencyMedicalService",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3145 Ann Arbor-Saline Rd",
+      "addressLocality": "Ann Arbor",
+      "addressRegion": "MI",
+      "postalCode": "48103",
+      "addressCountry": "US"
+    },
+    "containedInPlace": {
+      "@type": "GroceryStore",
+      "name": "Meijer",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3145 Ann Arbor-Saline Rd",
+        "addressLocality": "Ann Arbor",
+        "addressRegion": "MI",
+        "postalCode": "48103",
+        "addressCountry": "US"
+      }
+    }
+  };
+
   return (
-    <main className={styles.main}>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(homeStructuredData),
-        }}
-      />
-      <section className={styles.hero} id="about">
-        <div className={styles.heroInner}>
-          <div className={styles.heroContent}>
+    <main className={styles.main}> 
+      <script 
+        type="application/ld+json" 
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeStructuredData) }} 
+      /> 
+      <section className={styles.hero} id="about"> 
+        <div className={styles.heroInner}> 
+          <div className={styles.heroContent}> 
             <p className={styles.eyebrow}>Urgent Care Clinic Ann Arbor</p>
+
             <h1 className={styles.heroTitle}>
               Medical Attention You Can Rely On
             </h1>
