@@ -8,7 +8,7 @@ import Carousel from "@/ui/landing-page/carousel";
 import homeStructuredData from "@/lib/content/structured-data/home";
 
 export const metadata: Metadata = {
-  title: "Top Rated Urgent Care near me Ann Arbor Michigan | Walk in Clinic | HELLOMED",
+  title: "Urgent Care in Ann Arbor, MI | HELLOMED",
   description:
     "Looking for the best urgent care in Ann Arbor? HelloMed offers fast, affordable healthcare solutions at our walk-in clinics on Meijer Ann Arbor-Saline Rd & Plymouth Rd & Liberty St. Open after hours.",
   metadataBase: new URL("https://www.hello-med.com"),
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical: "https://www.hello-med.com",
   },
   openGraph: {
-    title: " Best Urgent Care Inside Meijer Ann Arbor-Saline Rd | HELLOMED",
+    title: "Best Urgent Care Inside Meijer Ann Arbor-Saline Rd | HELLOMED",
     description:
       "Looking for the best urgent care in Ann Arbor? HelloMed offers fast, affordable healthcare solutions at our walk-in clinics on Plymouth Rd & Meijer Ann Arbor-Saline Rd. Open after hours.",
     url: "https://www.hello-med.com",

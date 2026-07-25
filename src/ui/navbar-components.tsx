@@ -95,12 +95,18 @@ export const MobileMenuItem = ({
 }) => {
   return (
     <div onClick={() => setActive(active === item.name ? null : item.name)}>
-      <Link
-        href={item.href}
-        className="mt-1 block px-2 py-1 font-semibold rounded"
-      >
-        {item.name}
-      </Link>
+      {item.dropdown.length === 0 ? (
+        <Link
+          href={item.href}
+          className="mt-1 block px-2 py-1 font-semibold rounded"
+        >
+          {item.name}
+        </Link>
+      ) : (
+        <div className="mt-1 block px-2 py-1 font-semibold rounded">
+          {item.name}
+        </div>
+      )}
       {active === item.name && item.dropdown.length !== 0 && (
         <div
           className="w-full py-2 border-y-2"
