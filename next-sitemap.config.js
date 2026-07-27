@@ -6,16 +6,22 @@ module.exports = {
   siteUrl: "https://www.hello-med.com",
   generateRobotsTxt: true,
   generateIndexSitemap: true,
-  // /check-in collects PHI (DOB, insurance images, medical history) and is
-  // noindexed at the route level too — excluded here so it's never listed
-  // as a page for crawlers to prioritize.
+  // /check-in collects PHI (DOB, insurance images, medical history).
+  // It's excluded from the sitemap so it's never advertised as a page to
+  // crawl. It is intentionally NOT disallowed in robots.txt below —
+  // that page carries a `noindex` meta tag, and search engines can only
+  // act on that tag by actually crawling the page. Blocking the crawl
+  // would prevent Google from ever seeing (and honoring) the noindex,
+  // leaving already-indexed URLs like /check-in/success stuck in the
+  // index indefinitely. robots.txt disallow is for crawl-budget
+  // management, not privacy/index control — noindex handles that here.
   exclude: ["/admin/*", "/check-in", "/check-in/*"],
   robotsTxtOptions: {
     policies: [
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/admin/", "/check-in/"],
+        disallow: ["/admin/"],
       },
     ],
   },
