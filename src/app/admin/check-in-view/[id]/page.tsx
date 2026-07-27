@@ -139,7 +139,7 @@ export default function CheckInDetailsPage() {
     <div className="space-y-6">
       <button
         onClick={() => router.back()}
-        className="text-blue-500 underline"
+        className="font-large text-blue-500 underline 
       >
         Back to View Page
       </button>
