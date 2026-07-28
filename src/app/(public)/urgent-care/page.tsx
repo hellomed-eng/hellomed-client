@@ -5,6 +5,8 @@ import ReviewsGrid from "@/ui/reviews-grid";
 import PlusSign from "@/ui/urgent-care/plus-sign";
 import LocationsSection from "@/ui/locations-section";
 import HoursTable from "@/ui/hours-table";
+import FaqSection from "@/ui/urgent-care/faq-section";
+import { urgentCareFaqStructuredData } from "@/lib/content/structured-data/urgent-care-faq";
 
 export const metadata: Metadata = {
   title: "Urgent Care in Ann Arbor, MI | HELLOMED",
@@ -19,6 +21,12 @@ export const metadata: Metadata = {
 export default function UrgentHome() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(urgentCareFaqStructuredData),
+        }}
+      />
       {/* Main background image */}
       <UrgentMainBackground />
 
@@ -53,6 +61,9 @@ export default function UrgentHome() {
         {/* Grid for services */}
         <ReviewsGrid />
       </div>
+
+      {/* FAQ Section */}
+      <FaqSection />
 
       {/* Location Section */}
       <div className="grid justify-center justify-items-center pt-16 md:pt-32 gap-y-5 md:gap-y-10">

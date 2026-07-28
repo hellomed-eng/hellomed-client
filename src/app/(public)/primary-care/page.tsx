@@ -7,7 +7,7 @@ import ReviewsGrid from "@/ui/reviews-grid";
 import LocationsSection from "@/ui/locations-section";
 
 export const metadata: Metadata = {
-  title: "Primary Care",
+  title: "Primary Care in Ann Arbor, MI | HELLOMED",
   description:
     "Comprehensive primary care services at HELLOMED. Our experienced healthcare providers offer personalized medical care for you and your family in Ann Arbor.",
   metadataBase: new URL("https://hello-med.com"),

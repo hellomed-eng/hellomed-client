@@ -1,8 +1,19 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Check } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/ui/external/card";
 import { Button } from "@/ui/external/button";
+
+export const metadata: Metadata = {
+  title: "Insurance Information | HELLOMED",
+  description:
+    "Review insurance plans we accept and learn about the Budget Saving Program at HELLOMED in Ann Arbor, Michigan.",
+  metadataBase: new URL("https://www.hello-med.com"),
+  alternates: {
+    canonical: "https://www.hello-med.com/insurance-information",
+  },
+};
 
 const insurancePlans = [
   { name: "AARP", logo: "/insurance-aarp.jpg" },
