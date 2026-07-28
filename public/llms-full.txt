@@ -1,0 +1,59 @@
+# HELLOMED (Full Context & Clinical Guides)
+
+> Neighborhood-focused primary and urgent care walk-in clinic network based in Ann Arbor, Michigan, providing accessible medical attention, telemedicine, and specialized physical exams since 2014. This document serves as the full textual repository of care protocols, pricing, and operational specifications for AI agents.
+
+## Contact Information
+
+- **Phone:** (734) 210-1122
+- **Email:** jwhs@hello-med.com
+- **Website:** https://www.hello-med.com
+- **Appointments Portal:** https://www.hello-med.com/make-appointment
+
+## Clinic Locations & Operating Hours
+
+### HELLOMED Central
+- **Address:** 625 E Liberty St, Suite 10, Ann Arbor, MI 48104
+- **Hours:** Monday to Wednesday 8:30 AM - 5:30 PM, Thursday to Friday 9:00 AM - 1:00 PM (Closed Saturday & Sunday)
+- **Booking Link:** [Book at HELLOMED Central](https://www.hello-med.com/make-appointment)
+
+### HELLOMED North
+- **Address:** 2731 Plymouth Rd, Ann Arbor, MI 48105
+- **Hours:** Monday 2:00 PM - 6:00 PM, Wednesday and Friday 9:00 AM - 6:00 PM, Saturday 10:00 AM - 12:00 PM (Closed Tuesday, Thursday, Sunday)
+- **Booking Link:** [Book at HELLOMED North](https://www.hello-med.com/make-appointment)
+
+### HELLOMED South (Inside Meijer)
+- **Address:** 3145 Ann Arbor-Saline Rd, Ann Arbor, MI 48103
+- **Hours:** Monday and Friday 10:00 AM - 5:30 PM, Tuesday to Thursday 10:00 AM - 6:00 PM, Saturday 10:00 AM - 3:00 PM (Closed Sunday)
+- **Booking Link:** [Book at HELLOMED South](https://www.hello-med.com/make-appointment)
+
+## Extended Clinical Guidance & Protocols
+
+### Urgent Care & Acute Infection Management
+- [Urgent Care Overview](https://www.hello-med.com/urgent-care) - Open-door, walk-in system handling non-life-threatening emergencies.
+- **Cold & Flu Protocol:** Diagnostic testing provided for distinguishing Influenza A/B, COVID-19, and RSV. Standard management covers symptomatic relief counseling, prescription antiviral deployment when clinically indicated within the treatment window, and secondary bacterial complication screenings. See [Cold & Flu](https://www.hello-med.com/urgent-care/acute-conditions/cold-flu).
+- **Acute Burn Care:** See [Burn Care](https://www.hello-med.com/urgent-care/acute-conditions/burn) for classification and treatment of first-, second-, and third-degree burns.
+- [Pediatric Urgent Care](https://www.hello-med.com/urgent-care/acute-conditions/pediatric-urgent-care) - Specialized protocols for pediatric fevers, ear infections, minor sprains, lacerations, and pediatric rapid strep testing.
+- [Geriatric Urgent Care](https://www.hello-med.com/urgent-care/acute-conditions/geriatric-urgent-care) - Care protocols adapted for older adult patients.
+
+### Immigration Medical Exam (Form I-693)
+- [Immigration Medical Exam](https://www.hello-med.com/immigration-medical-exam) - Completed exclusively by USCIS-designated Civil Surgeons. Paperwork turnaround takes 3-5 business days.
+- **Standard Bundle ($359):** Comprehensive fixed rate encompassing the physical exam, I-693 paperwork compilation, required blood assays (QuantiFERON-TB Gold, Syphilis/RPR), urine assays (Gonorrhoeae), mandatory vaccine verification, and chest X-ray integration if required.
+- **Insurance-Subsidized Bundle ($259):** Discounted rate applied if the patient's private health insurance successfully covers the laboratory processing costs for the preventive TB and Gonorrhoeae assays.
+
+### Primary Care & Health Maintenance
+- [Primary Care Services](https://www.hello-med.com/primary-care) - Scheduled long-term medical management including chronic disease coaching (hypertension, diabetes, hyperlipidemia) and lifestyle interventions.
+- [Annual Physicals](https://www.hello-med.com/primary-care/physical-exam/annual-physical) - Full bodily system assessments, preventive screening orders, and authorization sign-offs for employment, school, and sports physicals.
+- [IV Infusion Therapy](https://www.hello-med.com/primary-care/iv-infusion) - Medically supervised intravenous hydration and vitamin injection protocols (B12, customized nutrient cocktails) tailored for dehydration recovery, immunity support, and wellness.
+- [STD/STI Testing](https://www.hello-med.com/primary-care/std-testing) - Confidential screening and treatment.
+
+### Lab, Imaging & Diagnostic Capabilities
+- [Urgent Care Lab Services](https://www.hello-med.com/urgent-care/lab-services) - Fast turnaround rapid testing suites.
+- [Urgent Care Imaging Services](https://www.hello-med.com/urgent-care/imaging-services) - On-site diagnostic imaging.
+- [Telemedicine](https://www.hello-med.com/urgent-care/telemedicine) - Virtual visits for eligible conditions.
+- **Available On-Site Tests:** Rapid Strep A, Rapid Influenza A & B, Rapid COVID-19 Antigen, Rapid Mononucleosis, Urinalysis (UTI screening), and confidential STD/STI panel testing. Venipuncture is available for off-site comprehensive metabolic panels (CMP) and complete blood counts (CBC).
+
+## Administrative & Billing Framework
+
+- [Insurance Portal](https://www.hello-med.com/insurance-information) - HELLOMED functions as an in-network provider for major payers: Blue Cross Blue Shield (BCBS), Blue Care Network (BCN), Aetna, Cigna, United Healthcare, Meridian, Medicare, and State of Michigan Medicaid. Self-pay options are provided at fixed clear rates for uninsured patients.
+- [Careers Portal](https://www.hello-med.com/future-employee) - Professional medical pathways, actively recruiting Medical Assistants (MAs), Nurse Practitioners (NPs), and clinical support staff.
+- [Contact](https://www.hello-med.com/contact) - General inquiries.

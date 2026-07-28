@@ -1,0 +1,16 @@
+# HELLOMED
+
+> Neighborhood walk-in urgent care and primary care clinic network in Ann Arbor, Michigan, with three locations. Offers urgent care, primary care, immigration medical exams (Form I-693), lab and imaging services, and telemedicine. Open since 2014.
+
+## Core Pages
+
+- [Urgent Care](https://www.hello-med.com/urgent-care): Walk-in care for non-life-threatening illness and injury, same-day visits, three Ann Arbor locations.
+- [Primary Care](https://www.hello-med.com/primary-care): Scheduled chronic disease management, physicals, and preventive care.
+- [Immigration Medical Exam (Form I-693)](https://www.hello-med.com/immigration-medical-exam): USCIS-required exams for green card applicants, performed by a designated Civil Surgeon.
+- [Make an Appointment](https://www.hello-med.com/make-appointment): Book a visit online.
+- [Insurance Information](https://www.hello-med.com/insurance-information): Accepted insurance plans and self-pay rates.
+- [Contact](https://www.hello-med.com/contact): Phone, email, and location details.
+
+## Full Reference
+
+- [Full Clinical & Operational Guide](https://www.hello-med.com/llms-full.txt): Complete details on locations, hours, pricing, and clinical protocols.
