@@ -49,6 +49,17 @@ export default function Footer() {
                   Careers
                 </Link>
               </li>
+              
+              <li>
+                <Link href="/privacy-policy" className="hover:text-white">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/sms-terms" className="hover:text-white">
+                  SMS Terms
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="mb-6 md:mb-0">
