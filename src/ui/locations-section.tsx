@@ -19,16 +19,16 @@ const locations = [
       "https://www.google.com/maps/place/HELLOMED+North/@42.3037993,-83.7089182,16.7z/data=!3m1!5s0x883cac265eb73f1f:0xe91c7cb229ccc520!4m6!3m5!1s0x883cac2654df9761:0x82dccbb38ec4cca!8m2!3d42.3036726!4d-83.7063491!16s%2Fg%2F1pt_kvcq7?entry=ttu",
     appointmentUrl:
       "https://calendar.google.com/calendar/u/0/appointments/AcZssZ3YAF2k-13KqDQerAO87OY9fx46q7g-8XC_OnM=",
-    alt: "healthcare solutions Ann Arbor MI",
+    alt: "Walk In Clinic Ann Arbor MI",
   },
   {
-    name: "HELLOMED Urgent Care In Meijer)",
+    name: "HELLOMED Urgent Care In Meijer",
     imageUrl: "/meijer's-location.png",
     mapUrl:
       "https://www.google.com/maps/place/HELLOMED+South(Inside+Meijer)+Urgent+Care+Ann+Arbor/@42.2398356,-83.7690996,17z/data=!3m1!4b1!4m6!3m5!1s0x883cb16d1922f951:0x3491d30ab536b7e9!8m2!3d42.2398356!4d-83.7665247!16s%2Fg%2F11x38v5w5c?entry=ttu&g_ep=EgoyMDI1MDUwNS4wIKXMDSoASAFQAw%3D%3D",
     appointmentUrl:
       "https://calendar.google.com/calendar/u/0/appointments/AcZssZ2R7wwx1LOxXF4t5LsMP16McAcJxCW3AX3pI4Y=",
-    alt: "healthcare solutions Ann Arbor MI",
+    alt: "Walk In Clinic Ann Arbor MI",
   },
   {
     name: "Telemedicine",
