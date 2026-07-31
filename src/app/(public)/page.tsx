@@ -5,7 +5,10 @@ import styles from "./page.module.css";
 import HoursTable from "@/ui/hours-table";
 import LocationsSection from "@/ui/locations-section";
 import Carousel from "@/ui/landing-page/carousel";
+import ReviewsGrid from "@/ui/reviews-grid";
 import homeStructuredData from "@/lib/content/structured-data/home";
+import { homeFaqStructuredData } from "@/lib/content/structured-data/home-faq";
+import HomeFaqSection from "@/ui/landing-page/home-faq-section";
 
 export const metadata: Metadata = {
   title: "Urgent Care in Ann Arbor, MI | HELLOMED",
@@ -59,13 +62,19 @@ export default function LandingPage() {
         type="application/ld+json" 
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeStructuredData) }} 
       /> 
-      <section className={styles.hero} id="about"> 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(homeFaqStructuredData),
+        }}
+      />
+      <section className={styles.hero} id="about">
         <div className={styles.heroInner}> 
           <div className={styles.heroContent}> 
             <p className={styles.eyebrow}>Urgent Care Clinic Ann Arbor</p>
 
             <h1 className={styles.heroTitle}>
-              Medical Attention You Can Rely On
+              Trusted Urgent & Primary Care in Ann Arbor
             </h1>
             <p className={styles.heroSubtitle}>
               HELLOMED Walk-in Clinic is a neighborhood-focused clinic dedicated
@@ -74,7 +83,13 @@ export default function LandingPage() {
               community and have been doing so since 2014.
             </p>
             <div className={styles.heroActions}>
-              <Link href="/urgent-care" className={styles.primaryButton}>
+             <a href="tel:+17342101122" className={styles.primaryButton}>
+                Call (734) 210-1122
+              </a>
+              <Link
+                href="/urgent-care"
+                className={`${styles.secondaryButton} ${styles.primaryCareButton}`}
+              >
                 Explore urgent care
               </Link>
               <Link
@@ -148,6 +163,18 @@ export default function LandingPage() {
         </div>
       </section>
 
+      <section className={styles.section} id="reviews">
+        <div className={styles.sectionInner}>
+          <div className={styles.sectionHeader}>
+            <p className={styles.sectionEyebrow}>What patients say</p>
+            <h2 className={styles.sectionTitle}>
+              Trusted by the Ann Arbor Community
+            </h2>
+          </div>
+          <ReviewsGrid />
+        </div>
+      </section>
+
       <section className={`${styles.sectionAlt} ${styles.carouselSection}`}>
         <div className={styles.sectionInner}>
           <div className={styles.carouselWrap}>
@@ -176,6 +203,16 @@ export default function LandingPage() {
         </div>
       </section>
 
+      <section className={styles.section} id="faq">
+        <div className={styles.sectionInner}>
+          <div className={styles.sectionHeader}>
+            <p className={styles.sectionEyebrow}>Questions</p>
+            <h2 className={styles.sectionTitle}>Frequently Asked Questions</h2>
+          </div>
+          <HomeFaqSection />
+        </div>
+      </section>
+
       <section
         className={`${styles.section} ${styles.sectionTightBottom}`}
         id="locations"
@@ -185,7 +222,7 @@ export default function LandingPage() {
             <h2 className={styles.sectionTitle}>Locations</h2>
             <p className={styles.sectionSubtitle}>
               Choose the clinic that works best for you. Appointments are
-              available at both locations.
+              available at all three locations.
             </p>
           </div>
           <LocationsSection appointmentLinks />
