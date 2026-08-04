@@ -29,6 +29,7 @@ export default function LocationCard({
               className="bg-white text-black py-2 px-4 rounded"
             >
               More information
+              <span className="sr-only"> about {name}</span>
             </a>
           ) : (
             <a
