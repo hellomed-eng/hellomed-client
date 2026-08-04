@@ -133,7 +133,7 @@ export default function CheckInFormPage() {
                 required
               />
             </div>
-            <div className="space-y-2">
+           <div className="space-y-2">
               <Label htmlFor="phone">Phone *</Label>
               <Input
                 name="phone"
@@ -143,6 +143,20 @@ export default function CheckInFormPage() {
                 onChange={handleChange}
                 required
               />
+              <p className="text-xs text-muted-foreground">
+                By providing your phone number, you agree to receive a
+                one-time SMS from HelloMed asking for feedback about your
+                visit. Msg frequency: 1 msg/visit. Msg &amp; data rates may
+                apply. Reply STOP to opt out, HELP for help. See our{" "}
+                <Link href="/sms-terms" className="underline hover:text-foreground">
+                  SMS Terms
+                </Link>{" "}
+                and{" "}
+                <Link href="/privacy-policy" className="underline hover:text-foreground">
+                  Privacy Policy
+                </Link>
+                .
+              </p>
             </div>
             <div className="space-y-2">
               <Label htmlFor="email">Email *</Label>
