@@ -73,9 +73,11 @@ export default function Footer() {
             <h3 className="text-lg font-semibold">Media</h3>
             <div className="flex mt-2 space-x-4">
               <a
-                href="https://www.instagram.com/hellomedclinic/"
+               href="https://www.instagram.com/hellomedclinic/"
                 className="text-gray-400 hover:text-white"
+                aria-label="HELLOMED on Instagram"
               >
+              
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -89,7 +91,8 @@ export default function Footer() {
               <a
                 href="https://www.facebook.com/hellomedclinic/"
                 className="text-gray-400 hover:text-white"
-              >
+                aria-label="HELLOMED on Facebook"
+               >
                 <svg
                   fill="currentColor"
                   className="w-6 h-6"
