@@ -50,6 +50,7 @@ export default function ReturningCheckInFormPage() {
     const required = [
       formInputs.name !== "",
       formInputs.birthDate !== "",
+      formInputs.phone !== "",
       formInputs.reasonForVisit !== "",
       formInputs.medicalHistoryChanged !== "",
       formInputs.medicationsChanged !== "",
@@ -150,13 +151,14 @@ export default function ReturningCheckInFormPage() {
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="phone">Phone (if changed)</Label>
+                <Label htmlFor="phone">Phone *</Label>
                 <Input
                   name="phone"
                   type="tel"
                   placeholder="(123) 456-7890"
                   value={formInputs.phone}
                   onChange={handleChange}
+                  required
                 />
               </div>
               <div className="space-y-2">
