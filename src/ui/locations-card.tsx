@@ -1,3 +1,4 @@
+cat > src/ui/locations-card.tsx << 'CARDEOF'
 import React from "react";
 import Image from "next/image";
 
@@ -26,8 +27,7 @@ export default function LocationCard({
         <Image src={imageUrl} alt={alt} fill className="object-cover" />
         <div className="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-100 md:opacity-0 md:hover:opacity-100 md:transition-opacity md:duration-300">
           {internalUrl ? (
-            
-              href={internalUrl}
+            <a href={internalUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-black py-2 px-4 rounded"
@@ -36,8 +36,7 @@ export default function LocationCard({
               <span className="sr-only"> about {name}</span>
             </a>
           ) : (
-            
-              href={mapUrl}
+            <a href={mapUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-black py-2 px-4 rounded"
@@ -63,8 +62,7 @@ export default function LocationCard({
               referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
-          
-            href={mapUrl}
+          <a href={mapUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-2 block text-center text-sm font-medium text-hmblue hover:underline"
@@ -76,3 +74,4 @@ export default function LocationCard({
     </div>
   );
 }
+CARDEOF
