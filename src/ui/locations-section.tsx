@@ -11,6 +11,8 @@ const locations = [
     appointmentUrl:
       "https://calendar.google.com/calendar/u/0/appointments/AcZssZ1ShT3cr2KENkFggsD0CDqXNIooOQLuYa5o7Xc=",
     alt: "walk in clinic in Ann Arbor",
+    lat: 42.2794509,
+    lng: -83.7411722,
   },
   {
     name: "HELLOMED Urgent Care-North Campus",
@@ -20,6 +22,8 @@ const locations = [
     appointmentUrl:
       "https://calendar.google.com/calendar/u/0/appointments/AcZssZ3YAF2k-13KqDQerAO87OY9fx46q7g-8XC_OnM=",
     alt: "Walk In Clinic Ann Arbor MI",
+    lat: 42.3036726,
+    lng: -83.7063491,
   },
   {
     name: "HELLOMED Urgent Care In Meijer",
@@ -29,6 +33,8 @@ const locations = [
     appointmentUrl:
       "https://calendar.google.com/calendar/u/0/appointments/AcZssZ2R7wwx1LOxXF4t5LsMP16McAcJxCW3AX3pI4Y=",
     alt: "Walk In Clinic Ann Arbor MI",
+    lat: 42.2398356,
+    lng: -83.7665247,
   },
   {
     name: "Telemedicine",
@@ -67,6 +73,8 @@ export default function LocationsSection({
             mapUrl={location.mapUrl}
             internalUrl={location.internalUrl}
             alt={location.alt}
+            lat={location.lat}
+            lng={location.lng}
           />
           {appointmentLinks &&
             (location.appointmentUrl ? (
