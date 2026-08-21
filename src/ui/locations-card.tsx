@@ -26,7 +26,7 @@ export default function LocationCard({
         <Image src={imageUrl} alt={alt} fill className="object-cover" />
         <div className="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-100 md:opacity-0 md:hover:opacity-100 md:transition-opacity md:duration-300">
           {internalUrl ? (
-            <a
+            
               href={internalUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -36,7 +36,7 @@ export default function LocationCard({
               <span className="sr-only"> about {name}</span>
             </a>
           ) : (
-            <a
+            
               href={mapUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -47,7 +47,7 @@ export default function LocationCard({
           )}
         </div>
       </div>
-            <div className="py-3 text-center">
+      <div className="py-3 text-center">
         <div className="font-bold text-2xl">{name}</div>
       </div>
       {lat != null && lng != null && (
