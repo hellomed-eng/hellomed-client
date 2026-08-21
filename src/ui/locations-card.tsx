@@ -1,4 +1,4 @@
-cat > src/ui/locations-card.tsx << 'CARDEOF'
+
 import React from "react";
 import Image from "next/image";
 
