@@ -183,6 +183,7 @@ export default function CheckInFormPage() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="friend">Friend or Family</SelectItem>
+                <SelectItem value="Bus Ad">Bus Ad</SelectItem>
                 <SelectItem value="bing">Bing</SelectItem>
                 <SelectItem value="yelp">Yelp</SelectItem>
                 <SelectItem value="instagram">Instagram</SelectItem>
