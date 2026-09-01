@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     icon: "/favicon.png",
   },
   keywords: [
-    "urgent care near me"
+    "urgent care near me",
     "urgent care ann arbor",
     "urgent care in Meijer",
     "ann arbor walk in clinic",
