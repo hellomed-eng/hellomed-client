@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "@/ui/globals.css";
-
 export const metadata: Metadata = {
   title: "HELLOMED Walk-In Urgent Clinic Ann Arbor",
   description:
@@ -10,7 +10,9 @@ export const metadata: Metadata = {
     icon: "/favicon.png",
   },
   keywords: [
+    "urgent care near me"
     "urgent care ann arbor",
+    "urgent care in Meijer",
     "ann arbor walk in clinic",
     "clinic ann arbor",
     "urgent care plymouth rd",
@@ -36,7 +38,6 @@ export const metadata: Metadata = {
     },
   },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -45,6 +46,19 @@ export default function RootLayout({
   return (
     <html className="scroll-smooth" lang="en">
       <body className="relative antialiased text-gray-900 font-avenirNext">
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-977607860"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-gtag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-977607860');
+          `}
+        </Script>
         {children}
       </body>
     </html>
