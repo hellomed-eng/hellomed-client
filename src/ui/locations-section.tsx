@@ -4,6 +4,15 @@ import Link from "next/link";
 
 const locations = [
   {
+    name: "Immigration Medical Exam",
+    imageUrl: "/immigration-medical-exam-uscis.jpg",
+    mapUrl: "",
+    internalUrl: "/immigration-medical-exam",
+    appointmentUrl:
+      "https://calendar.google.com/calendar/u/0/appointments/AcZssZ0nxIjPYateQ8_Kkiap4-KN_y6AGXvAiM4kAF4=",
+    alt: "Immigration Medical Exam in Ann Arbor",
+  },
+  {
     name: "HELLOMED Urgent Care-Central Campus",
     imageUrl: "/central-location.png",
     mapUrl:
@@ -45,15 +54,7 @@ const locations = [
       "https://calendar.google.com/calendar/u/0/appointments/AcZssZ1x0Q-g6WSa_xtiFrXkbd5fX9M-JQxk5aoiUGk=",
     alt: "best urgent care Ann Arbor",
   },
-  {
-    name: "Immigration Medical Exam",
-    imageUrl: "/immigration-medical-exam-uscis.jpg",
-    mapUrl: "",
-    internalUrl: "/immigration-medical-exam",
-    appointmentUrl:
-      "https://calendar.google.com/calendar/u/0/appointments/AcZssZ0nxIjPYateQ8_Kkiap4-KN_y6AGXvAiM4kAF4=",
-    alt: "Immigration Medical Exam in Ann Arbor",
-  },
+ 
 ];
 
 interface LocationsSectionProps {
