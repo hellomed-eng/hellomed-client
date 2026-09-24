@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface LocationCardProps {
   name: string;
   imageUrl: string;
   internalUrl?: string;
+  pageUrl?: string;
   mapUrl: string;
   alt: string;
   lat?: number;
@@ -15,6 +17,7 @@ export default function LocationCard({
   name,
   imageUrl,
   internalUrl,
+  pageUrl,
   mapUrl,
   alt,
   lat,
@@ -39,6 +42,14 @@ export default function LocationCard({
       </div>
       <div className="py-3 text-center">
         <div className="font-bold text-2xl">{name}</div>
+        {pageUrl && (
+          <Link
+            href={pageUrl}
+            className="mt-1 inline-block text-sm font-medium text-hmblue hover:underline"
+          >
+            Hours, services &amp; directions →
+          </Link>
+        )}
       </div>
       {lat != null && lng != null && (
         <div className="px-4 pb-4">

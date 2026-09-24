@@ -19,6 +19,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/locations" className="hover:text-white">
+                  Locations
+                </Link>
+              </li>
+              <li>
                 <Link href="/urgent-care" className="hover:text-white">
                   Urgent care
                 </Link>

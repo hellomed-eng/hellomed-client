@@ -11,7 +11,7 @@ import { urgentCareFaqStructuredData } from "@/lib/content/structured-data/urgen
 export const metadata: Metadata = {
   title: "Urgent Care in Ann Arbor, MI | HELLOMED",
   description:
-    "Walk-in urgent care in Ann Arbor with same-day visits, X-ray, labs, and telemedicine. Three convenient locations, open after hours. Book online or walk in today.",
+    "Walk-in urgent care in Ann Arbor with same-day visits, X-ray, labs, and telemedicine. Three convenient locations, walk-ins welcome. Book online or walk in today.",
   metadataBase: new URL("https://www.hello-med.com"),
   alternates: {
     canonical: "https://www.hello-med.com/urgent-care",
