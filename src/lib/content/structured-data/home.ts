@@ -23,6 +23,7 @@ const homeStructuredData = {
     {
       "@type": "MedicalClinic",
       name: "HELLOMED North",
+      url: "https://www.hello-med.com/locations/north-campus",
       image: "https://www.hello-med.com/landing-img.webp",
       address: {
         "@type": "PostalAddress",
@@ -48,10 +49,11 @@ const homeStructuredData = {
     {
       "@type": "MedicalClinic",
       name: "HELLOMED Central",
+      url: "https://www.hello-med.com/locations/central-campus",
       image: "https://www.hello-med.com/landing-img.webp",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "623 E Liberty St",
+        streetAddress: "625 E Liberty St, Suite 10",
         addressLocality: "Ann Arbor",
         addressRegion: "Michigan",
         postalCode: "48104",
@@ -73,6 +75,7 @@ const homeStructuredData = {
     {
       "@type": "MedicalClinic",
       name: "HELLOMED South (inside Meijer)",
+      url: "https://www.hello-med.com/locations/meijer",
       image: "https://www.hello-med.com/landing-img.webp",
       address: {
         "@type": "PostalAddress",

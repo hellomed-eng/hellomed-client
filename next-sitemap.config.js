@@ -31,6 +31,7 @@ module.exports = {
       "/primary-care",
       "/make-appointment",
       "/immigration-medical-exam",
+      "/locations",
     ];
     const lowPriority = ["/careers", "/future-employee", "/contact"];
 

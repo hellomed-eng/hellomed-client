@@ -12,6 +12,7 @@ export default function LandingNavbar() {
     label: "Make an appointment now",
   };
   const navLinks = [
+    { href: "/locations", label: "Locations" },
     { href: "/urgent-care", label: "Urgent Care" },
     { href: "/primary-care", label: "Primary Care" },
     { href: "/immigration-medical-exam", label: "Immigration Medical Exam" },

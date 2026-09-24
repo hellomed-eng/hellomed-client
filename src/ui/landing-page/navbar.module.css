@@ -64,7 +64,7 @@
 .navLinksDesktop {
   display: none;
   flex-wrap: wrap;
-  gap: 1rem 1.5rem;
+  gap: 1rem 1.25rem;
   font-weight: 600;
 }
 
