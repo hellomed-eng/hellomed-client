@@ -81,15 +81,15 @@ export default function ImmigrationMedicalExamPage() {
               <br />
               Located in the international community, we know how we can help
               you. Please book online after you read through the following
-              information. Please allow 3-5 business days to complete the form.
-              If you need to expedite a process please call us ahead.
+              information. Please allow a week to complete the form.
+              If you need to expedite a process we can help with additional charge.
             </p>
           </CardContent>
         </Card>
 
         <Card className="mb-8">
           <CardHeader>
-            <CardTitle>Fee Schedule and Pricing</CardTitle>
+            <CardTitle>Fee Schedule and Pricing from November, 2026 we will charge 3% processing for credit/debit card</CardTitle>
           </CardHeader>
           <CardContent>
             <ul className="list-disc pl-6 space-y-2 pb-10 text-red-500 font-semibold">
@@ -133,7 +133,7 @@ export default function ImmigrationMedicalExamPage() {
         <Card className="mb-8">
           <CardHeader>
             <h2 className="text-2xl font-bold">
-              What to Bring With for Immigration Medical Exam Blood Test
+              What to Bring With for Immigration Medical Exam 
             </h2>
           </CardHeader>
           <CardContent>
@@ -163,7 +163,7 @@ export default function ImmigrationMedicalExamPage() {
         <Card className="mb-8">
           <CardHeader>
             <h2 className="text-2xl font-bold">
-              Immigration Body Check Up Process
+              Immigration medical exam Process
             </h2>
           </CardHeader>
           <CardContent>
@@ -173,7 +173,7 @@ export default function ImmigrationMedicalExamPage() {
             </p>
             <ol className="list-decimal pl-6 space-y-2 mb-4">
               <li>
-                Communicable Disease Screening including blood and urine tests
+                Communicable Disease Screening including blood and urine tests- For sample collection, We will direct you to the nearby lab you can walk in on the same exam date 
               </li>
               <li>Physical Exam</li>
               <li>Vaccination</li>
